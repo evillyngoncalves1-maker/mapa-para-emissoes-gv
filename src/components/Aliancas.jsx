@@ -26,10 +26,10 @@ function AlCard({ hColor, title, stats, members, howTo, tip }) {
   )
 }
 
-export default function Alianças() {
+export default function Aliancas() {
   return (
     <div>
-      <PageHead title="🤝 Alianças Aéreas" subtitle="Como emitir em cada aliança saindo do Brasil." />
+      <PageHead title="🤝 Aliancas Aéreas" subtitle="Como emitir em cada aliança saindo do Brasil." />
       <AlCard
         hColor="linear-gradient(135deg,#7A5000,#C28000)"
         title="⭐ Star Alliance"

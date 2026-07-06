@@ -16,7 +16,7 @@ const TABS = [
   { id:'hubs',    label:'🌐 Mapa de Hubs',  component: MapaHubs },
   { id:'cias',    label:'✈️ Buscar Cia',     component: BuscadorCia },
   { id:'regioes', label:'🗺️ Por Região',     component: PorRegiao },
-  { id:'alianças',label:'🤝 Alianças',       component: Alianças },
+  { id:'Aliancas',label:'🤝 Aliancas',       component: Aliancas },
   { id:'exec',    label:'💺 Executivas',     component: Executivas },
   { id:'tabelas', label:'📋 Tabelas Fixas',  component: TabelasFixas },
   { id:'como',    label:'🔢 Como Emitir',    component: ComoEmitir },
@@ -37,7 +37,7 @@ export default function MapaEmissoes({ onLogout }) {
           <Logo size={56} variant="dark" />
           <div style={s.headerText}>
             <div style={s.headerTitle}>Gonex Viagens — Mapa de Emissões</div>
-            <div style={s.headerSub}>Busca por IATA · Rotas · Hubs · Alianças · Executivas</div>
+            <div style={s.headerSub}>Busca por IATA · Rotas · Hubs · Aliancas · Executivas</div>
           </div>
           <div style={s.headerRight}>
             <span style={s.badge}>USO INTERNO</span>
