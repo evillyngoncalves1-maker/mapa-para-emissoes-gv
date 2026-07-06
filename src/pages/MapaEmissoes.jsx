@@ -10,6 +10,7 @@ import ComoEmitir from '../components/ComoEmitir'
 import CiasNacionais from '../components/CiasNacionais'
 import Telefones from '../components/Telefones'
 import SitesUteis from '../components/SitesUteis'
+import Executivas from '../components/Executivas'
 
 const TABS = [
   { id:'iata',    label:'🛫 Buscar IATA',   component: BuscadorIATA },
