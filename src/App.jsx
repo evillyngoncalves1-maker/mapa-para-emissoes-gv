@@ -1,6 +1,6 @@
 import MapaEmissoes from './pages/MapaEmissoes'
 
 export default function App() {
-  // Removida a verificação do Supabase temporariamente para o app carregar
+  // Verificação do Supabase removida temporariamente para o app carregar direto
   return <MapaEmissoes onLogout={() => {}} />
 }

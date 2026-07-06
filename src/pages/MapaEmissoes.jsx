@@ -5,19 +5,19 @@ import BuscadorCia from '../components/BuscadorCia'
 import MapaHubs from '../components/MapaHubs'
 import PorRegiao from '../components/PorRegiao'
 import Aliancas from '../components/Aliancas'
+import Executivas from '../components/Executivas'
 import TabelasFixas from '../components/TabelasFixas'
 import ComoEmitir from '../components/ComoEmitir'
 import CiasNacionais from '../components/CiasNacionais'
 import Telefones from '../components/Telefones'
 import SitesUteis from '../components/SitesUteis'
-import Executivas from '../components/Executivas'
 
 const TABS = [
   { id:'iata',    label:'🛫 Buscar IATA',   component: BuscadorIATA },
   { id:'hubs',    label:'🌐 Mapa de Hubs',  component: MapaHubs },
   { id:'cias',    label:'✈️ Buscar Cia',     component: BuscadorCia },
   { id:'regioes', label:'🗺️ Por Região',     component: PorRegiao },
-  { id:'Aliancas',label:'🤝 Aliancas',       component: Aliancas },
+  { id:'Aliancas',label:'🤝 Alianças',       component: Aliancas },
   { id:'exec',    label:'💺 Executivas',     component: Executivas },
   { id:'tabelas', label:'📋 Tabelas Fixas',  component: TabelasFixas },
   { id:'como',    label:'🔢 Como Emitir',    component: ComoEmitir },
@@ -32,13 +32,12 @@ export default function MapaEmissoes({ onLogout }) {
 
   return (
     <div style={s.wrap}>
-      {/* HEADER */}
       <header style={s.header}>
         <div style={s.headerInner}>
           <Logo size={56} variant="dark" />
           <div style={s.headerText}>
             <div style={s.headerTitle}>Gonex Viagens — Mapa de Emissões</div>
-            <div style={s.headerSub}>Busca por IATA · Rotas · Hubs · Aliancas · Executivas</div>
+            <div style={s.headerSub}>Busca por IATA · Rotas · Hubs · Alianças · Executivas</div>
           </div>
           <div style={s.headerRight}>
             <span style={s.badge}>USO INTERNO</span>
@@ -46,7 +45,6 @@ export default function MapaEmissoes({ onLogout }) {
           </div>
         </div>
 
-        {/* NAV */}
         <nav style={s.nav}>
           <div style={s.navInner}>
             {TABS.map(t => (
@@ -62,7 +60,6 @@ export default function MapaEmissoes({ onLogout }) {
         </nav>
       </header>
 
-      {/* MAIN */}
       <main style={s.main}>
         {ActiveComponent && <ActiveComponent />}
       </main>
